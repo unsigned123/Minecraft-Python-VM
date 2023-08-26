@@ -1,0 +1,2 @@
+$execute if data storage $(package_name):$(target_name) stack[-1].str if data storage $(package_name):$(target_name) stack[-2].str run function pvm:lib/str_operation_add {"operation":"+=","package_name":$(package_name),"target_name":$(target_name)}
+$execute unless data storage $(package_name):$(target_name) stack[-1].str unless data storage $(package_name):$(target_name) stack[-2].str run function pvm:lib/num_operation {"operation":"+=","package_name":$(package_name),"target_name":$(target_name)}
