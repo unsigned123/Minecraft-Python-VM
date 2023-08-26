@@ -1,1 +1,0 @@
-$data modify storage pvm:concat result set value "$(a)$(b)"
