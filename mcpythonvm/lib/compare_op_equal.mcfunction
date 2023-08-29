@@ -1,0 +1,10 @@
+$execute if data storage $(package_name):$(target_name) stack[-1].str if data storage $(package_name):$(target_name) stack[-2].str store success storage pvm:coe result int 1 run data modify storage $(package_name):$(target_name) stack[-1].data set from storage $(package_name):$(target_name) stack[-2].data
+$execute if data storage $(package_name):$(target_name) stack[-1].float if data storage $(package_name):$(target_name) stack[-2].float store success storage pvm:coe result int 1 run data modify storage $(package_name):$(target_name) stack[-1].data set from storage $(package_name):$(target_name) stack[-2].data
+$execute if data storage $(package_name):$(target_name) stack[-1].int if data storage $(package_name):$(target_name) stack[-2].int store success storage pvm:coe result int 1 run data modify storage $(package_name):$(target_name) stack[-1].data set from storage $(package_name):$(target_name) stack[-2].data
+$execute if data storage $(package_name):$(target_name) stack[-1].list if data storage $(package_name):$(target_name) stack[-2].list store success storage pvm:coe result int 1 run data modify storage $(package_name):$(target_name) stack[-1].data set from storage $(package_name):$(target_name) stack[-2].data
+$execute if data storage $(package_name):$(target_name) stack[-1].tuple if data storage $(package_name):$(target_name) stack[-2].tuple store success storage pvm:coe result int 1 run data modify storage $(package_name):$(target_name) stack[-1].data set from storage $(package_name):$(target_name) stack[-2].data
+execute store result score vm counter run data get storage pvm:coe result
+$data modify storage $(package_name):$(target_name) stack append value {data:0}
+$execute if score vm counter = vm 0 run data modify storage $(package_name):$(target_name) stack[-1].data set value 1
+$data remove storage $(package_name):$(target_name) stack[-2]
+$data remove storage $(package_name):$(target_name) stack[-2]

@@ -1,0 +1,6 @@
+$execute if data storage $(package_name):$(target_name) stack[-1].list run data modify storage $(package_name):$(target_name) stack append value {"data":{"target":[],"index":-1,"length":0,"type":"list","list":1},"type":"iterator","iterator":1}
+$execute if data storage $(package_name):$(target_name) stack[-1].tuple run data modify storage $(package_name):$(target_name) stack append value {"data":{"target":[],"index":-1,"length":0,"type":"list","list":1},"type":"iterator","iterator":1}
+$execute if data storage $(package_name):$(target_name) stack[-1].str run data modify storage $(package_name):$(target_name) stack append value {"data":{"target":"","index":-1,"length":0,"type":"str","str":1},"type":"iterator","iterator":1}
+$data modify storage $(package_name):$(target_name) stack[-1].data.target set from storage $(package_name):$(target_name) stack[-2].data
+$execute store result storage $(package_name):$(target_name) stack[-1].data.length int 1 run data get storage $(package_name):$(target_name) stack[-2].data
+$data remove storage $(package_name):$(target_name) stack[-2]

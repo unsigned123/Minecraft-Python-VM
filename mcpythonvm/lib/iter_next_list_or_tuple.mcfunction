@@ -1,0 +1,1 @@
+$data modify storage $(package_name):$(target_name) stack append from storage $(package_name):$(target_name) stack[-1].data.target[$(index)]

@@ -1,0 +1,3 @@
+$execute if data storage $(package_name):$(target_name) stack[-1].data.list run function pvm:lib/iter_next_list_or_tuple with storage pvm:iter iter
+$execute if data storage $(package_name):$(target_name) stack[-1].data.tuple run function pvm:lib/iter_next_list_or_tuple with storage pvm:iter iter
+$execute if data storage $(package_name):$(target_name) stack[-1].data.str run function pvm:lib/iter_next_str with storage pvm:iter iter

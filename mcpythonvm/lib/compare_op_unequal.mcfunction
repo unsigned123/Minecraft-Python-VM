@@ -1,0 +1,9 @@
+$data modify storage $(package_name):$(target_name) stack append value {"data":1}
+$execute if data storage $(package_name):$(target_name) stack[-2].int if data storage $(package_name):$(target_name) stack[-3].int store success storage $(package_name):$(target_name) stack[-1].data int 1 run data modify storage $(package_name):$(target_name) stack[-2].data set from storage $(package_name):$(target_name) stack[-3].data
+$execute if data storage $(package_name):$(target_name) stack[-2].float if data storage $(package_name):$(target_name) stack[-3].float store success storage $(package_name):$(target_name) stack[-1].data int 1 run data modify storage $(package_name):$(target_name) stack[-2].data set from storage $(package_name):$(target_name) stack[-3].data
+$execute if data storage $(package_name):$(target_name) stack[-2].str if data storage $(package_name):$(target_name) stack[-3].str store success storage $(package_name):$(target_name) stack[-1].data int 1 run data modify storage $(package_name):$(target_name) stack[-2].data set from storage $(package_name):$(target_name) stack[-3].data
+$execute if data storage $(package_name):$(target_name) stack[-2].list if data storage $(package_name):$(target_name) stack[-3].list store success storage $(package_name):$(target_name) stack[-1].data int 1 run data modify storage $(package_name):$(target_name) stack[-2].data set from storage $(package_name):$(target_name) stack[-3].data
+$execute if data storage $(package_name):$(target_name) stack[-2].tuple if data storage $(package_name):$(target_name) stack[-3].tuple store success storage $(package_name):$(target_name) stack[-1].data int 1 run data modify storage $(package_name):$(target_name) stack[-2].data set from storage $(package_name):$(target_name) stack[-3].data
+
+$data remove storage $(package_name):$(target_name) stack[-2]
+$data remove storage $(package_name):$(target_name) stack[-2]
