@@ -1,1 +1,0 @@
-$execute unless data storage pvm:argbuf buf[0].str run data modify storage pvm:to_str result set value "$(data)"

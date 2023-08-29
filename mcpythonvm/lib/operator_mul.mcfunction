@@ -1,3 +1,0 @@
-$execute if data storage $(package_name):$(target_name) stack[-1].str unless data storage $(package_name):$(target_name) stack[-2].str run function pvm:lib/str_operation_mul_lnum {"operation":"*=","package_name":$(package_name),"target_name":$(target_name)}
-$execute if data storage $(package_name):$(target_name) stack[-2].str unless data storage $(package_name):$(target_name) stack[-1].str run function pvm:lib/str_operation_mul_rnum {"operation":"*=","package_name":$(package_name),"target_name":$(target_name)}
-$execute unless data storage $(package_name):$(target_name) stack[-1].str unless data storage $(package_name):$(target_name) stack[-2].str run function pvm:lib/num_operation {"operation":"*=","package_name":$(package_name),"target_name":$(target_name)}

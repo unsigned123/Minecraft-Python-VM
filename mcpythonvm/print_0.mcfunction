@@ -1,1 +1,0 @@
-function pvm:lib/print with storage pvm:argbuf buf[0]

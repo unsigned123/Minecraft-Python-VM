@@ -1,3 +1,0 @@
-$execute if data storage $(package_name):$(target_name) stack[-3].list run function pvm:lib/subscr2_list_or_tuple {"package_name":"$(package_name)","target_name":"$(target_name)"}
-$execute if data storage $(package_name):$(target_name) stack[-3].tuple run function pvm:lib/subscr2_list_or_tuple {"package_name":"$(package_name)","target_name":"$(target_name)"}
-$execute if data storage $(package_name):$(target_name) stack[-3].str run function pvm:lib/subscr2_str {"package_name":"$(package_name)","target_name":"$(target_name)"}

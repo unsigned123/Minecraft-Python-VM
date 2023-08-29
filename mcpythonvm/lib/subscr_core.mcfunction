@@ -1,1 +1,0 @@
-$data modify storage $(package_name):$(target_name) stack append from storage pvm:subscr subscr.list.data[$(index)]
